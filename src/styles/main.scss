@@ -1,0 +1,17 @@
+@use "reset";
+@use "fonts";
+@use "variables";
+@use "utils";
+@use "globals";
+@use "helpers" as *;
+
+@use './blocks/hero-base';
+@use './blocks/inline-icon';
+@use './blocks/button';
+@use './blocks/key-features';
+@use './blocks/benefits-tab';
+@use './blocks/simple-content';
+@use './blocks/included';
+@use './blocks/testimonials';
+
+@import '../../node_modules/swiper/swiper-bundle.min.css';

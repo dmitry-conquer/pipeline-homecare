@@ -1,0 +1,114 @@
+@use "../helpers" as *;
+
+.testimonials {
+  padding: fluid(40, 80) 0 fluid(40, 80) 0;
+  &__container {
+    max-width: rem(1780);
+  }
+  &__tilte {
+    text-align: center;
+    margin-bottom: fluid(30, 60);
+  }
+  &__slider {
+    padding: rem(50);
+    margin: rem(-50);
+  }
+  &__nav {
+    width: 100%;
+    height: rem(10);
+    max-width: rem(1180);
+    margin: 0 auto;
+    border: 1px solid var(--color-accent);
+    border-radius: rem(5);
+    margin-top: rem(60);
+  }
+  &__nav-pointer {
+    overflow: hidden;
+    width: 100%;
+    height: rem(24);
+    max-width: rem(134);
+    background-color: var(--color-accent);
+    margin: 0 auto;
+    transform: translateY(-35%);
+    border-radius: rem(12);
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav-button {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    @include hover {
+      background-color: var(--color-accent-light);
+    }
+    &_prev {
+      transform: rotate(180deg);
+    }
+    &_next {
+    }
+  }
+}
+
+.testimonial {
+  --default-scale: 1;
+  width: rem(578);
+  background-color: var(--color-accent-light);
+  padding: fluid(25, 50);
+  border-radius: rem(35);
+  transition: all 0.7s ease;
+  flex-shrink: 0;
+  transform: scale(var(--default-scale)) rotate(0);
+  &.swiper-slide-active {
+    transform: scale(1.1) !important;
+    .testimonial__footer-author {
+      font-weight: 700;
+    }
+  }
+  &.swiper-slide-prev {
+    transform: scale(var(--default-scale)) rotate(-6deg);
+  }
+  &.swiper-slide-next {
+    transform: scale(var(--default-scale)) rotate(6deg);
+  }
+  &__body {
+    position: relative;
+    padding-top: fluid(40, 90);
+    margin-bottom: fluid(30, 40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::before {
+      content: "“";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: fluid(50, 80);
+    }
+  }
+  &__body-text {
+    color: var(--color-gray);
+  }
+  &__body-rating {
+    margin-top: rem(40);
+  }
+  &__footer {
+    display: flex;
+    column-gap: fluid(20, 40);
+  }
+  &__footer-image {
+    width: rem(73);
+    height: 100%;
+    object-fit: contain;
+  }
+  &__footer-info {
+  }
+  &__footer-author {
+    color: var(--color-gray);
+    margin-bottom: rem(14);
+  }
+  &__footer-role {
+    color: var(--color-gray);
+    font-size: fluid(20, 18);
+  }
+}
