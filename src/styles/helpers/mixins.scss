@@ -29,7 +29,7 @@
 @mixin flex-center($isInline: false) {
   @if $isInline {
     display: inline-flex;
-  } @else  {
+  } @else {
     display: flex;
   }
 

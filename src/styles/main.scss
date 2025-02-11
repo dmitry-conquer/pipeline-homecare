@@ -1,17 +1,19 @@
 @use "reset";
-@use "fonts";
+// @use "fonts";
 @use "variables";
 @use "utils";
 @use "globals";
+@use "animations";
 @use "helpers" as *;
 
-@use './blocks/hero-base';
-@use './blocks/inline-icon';
-@use './blocks/button';
-@use './blocks/key-features';
-@use './blocks/benefits-tab';
-@use './blocks/simple-content';
-@use './blocks/included';
-@use './blocks/testimonials';
+@use "./blocks/hero-base";
+@use "./blocks/inline-icon";
+@use "./blocks/button";
+@use "./blocks/key-features";
+@use "./blocks/benefits-tab";
+@use "./blocks/simple-content";
+@use "./blocks/included";
+@use "./blocks/testimonials";
+@use "./blocks/row-base";
 
-@import '../../node_modules/swiper/swiper-bundle.min.css';
+@use "./libs/lenis";

@@ -1,0 +1,62 @@
+@use "../helpers" as *;
+
+.row-base {
+  background-color: var(--color-gray-dark);
+  padding: fluid(40, 80) 0;
+  position: relative;
+
+  &__left-dec {
+    position: absolute;
+    left: fluid(-100, 0, 1920, 1000);
+    top: 0;
+    width: fluid(0, 280, 1920, 700);
+    transform: translateY(-50%);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: rem(30) fluid(0, 130);
+    @include small {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    color: var(--color-light);
+    font-weight: 300;
+    flex: 0 1 rem(610);
+    @include small {
+      flex: 0 1 auto;
+    }
+
+    h2 {
+      color: inherit;
+      margin-bottom: fluid(20, 60);
+    }
+
+    ul {
+      padding-left: rem(20);
+      margin-top: rem(20);
+
+      li {
+        list-style-type: disc;
+
+        &:not(:last-child) {
+          margin-bottom: rem(20);
+        }
+
+        &::marker {
+          font-size: rem(14);
+        }
+      }
+    }
+  }
+
+  &__image {
+    flex: 0 1 rem(440);
+    @include small {
+      flex: 0 1 auto;
+    }
+  }
+}

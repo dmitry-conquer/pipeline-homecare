@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
@@ -32,6 +33,8 @@
         </section>
 
         <section class="key-features">
+          <img src="/public/images/half-circle1.svg" alt="" loading="lazy" class="key-features__left-dec">
+          <img src="/public/images/half-circle2.svg" alt="" loading="lazy" class="key-features__right-dec">
           <div class="key-features__container container-base">
             <div class="key-features__header">
               <h2>Key Features</h2>
@@ -335,15 +338,52 @@
             </div>
             <div class="testimonials__nav">
               <div class="testimonials__nav-pointer">
-                <button type="button" class="testimonials__nav-button testimonials__nav-button_prev"></button>
-                <button type="button" class="testimonials__nav-button testimonials__nav-button_next"></button>
+                <button type="button" class="testimonials__nav-button testimonials__nav-button_prev">
+                  <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.800934 5.44943C0.552719 5.20122 0.552719 4.79878 0.800934 4.55057L4.84581 0.505689C5.09403 0.257475 5.49646 0.257475 5.74468 0.505689C5.99289 0.753903 5.99289 1.15634 5.74468 1.40455L2.14923 5L5.74468 8.59545C5.99289 8.84366 5.99289 9.2461 5.74468 9.49431C5.49646 9.74253 5.09403 9.74253 4.84581 9.49431L0.800934 5.44943ZM18.1025 5.63559L1.25036 5.63559L1.25036 4.36441L18.1025 4.36441L18.1025 5.63559Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
+                <button type="button" class="testimonials__nav-button testimonials__nav-button_next">
+                  <svg width="19" height="10" viewBox="0 0 19 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.800934 5.44943C0.552719 5.20122 0.552719 4.79878 0.800934 4.55057L4.84581 0.505689C5.09403 0.257475 5.49646 0.257475 5.74468 0.505689C5.99289 0.753903 5.99289 1.15634 5.74468 1.40455L2.14923 5L5.74468 8.59545C5.99289 8.84366 5.99289 9.2461 5.74468 9.49431C5.49646 9.74253 5.09403 9.74253 4.84581 9.49431L0.800934 5.44943ZM18.1025 5.63559L1.25036 5.63559L1.25036 4.36441L18.1025 4.36441L18.1025 5.63559Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </button>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="row-base">
+          <img src="/public/images/half-circle1.svg" alt="" loading="lazy" class="row-base__left-dec">
+          <div class="row-base__container container-base">
+            <div class="row-base__content">
+              <h2>Why Choose Us?</h2>
+              <p>
+                We specialize in creating CRM solutions that are not just tools but strategic assets for home care
+                agencies. Our system is built to help your business:
+              </p>
+              <ul>
+                <li>Save time with automation.</li>
+                <li>Enhance client satisfaction.</li>
+                <li>Build a strong online presence with a customizable, lead-focused website.</li>
+                <li>Simplify operational complexities.</li>
+              </ul>
+            </div>
+            <div class="row-base__image">
+              <img src="/public/images/why.webp" alt="" loading="lazy" />
             </div>
           </div>
         </section>
       </main>
       {{> footer}}
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
     <script type="module" src="../src/scripts/main.ts" defer></script>
   </body>
 </html>

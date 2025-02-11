@@ -1,22 +1,27 @@
 @use "../helpers" as *;
 
 .included {
-  padding: fluid(40, 80) 0 fluid(40, 80) 0;
+  padding: fluid(40, 80) 0;
+
   &__container {
     max-width: rem(976);
   }
+
   &__header {
     margin-bottom: fluid(30, 52);
     padding: 0 fluid(6, 24);
   }
+
   &__title {
     font-size: fluid(24, 35);
     display: flex;
     justify-content: space-between;
     column-gap: rem(12);
   }
+
   &__list {
   }
+
   &__item {
     color: var(--color-gray);
     font-weight: 300;
@@ -25,6 +30,7 @@
     justify-content: space-between;
     align-items: center;
     column-gap: rem(12);
+
     &::after {
       content: "";
       flex-shrink: 0;

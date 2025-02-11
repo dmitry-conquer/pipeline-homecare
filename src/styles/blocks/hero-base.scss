@@ -5,6 +5,7 @@
   padding: fluid(100, 238) 0 fluid(40, 128);
   overflow: hidden;
   position: relative;
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -14,28 +15,34 @@
     max-width: 80%;
     @include small {
       max-width: 100%;
+
       br {
         display: none;
       }
     }
+
     h2 {
       font-weight: 400;
       color: inherit;
     }
+
     p {
       font-weight: 300;
     }
   }
+
   &__image {
     position: absolute;
     right: -12%;
     bottom: -16%;
     width: fluid(200, 900, 1900, 375);
     height: fluid(200, 900, 1900, 375);
+
     &-inner {
       @include abs-center;
       max-width: 85%;
     }
+
     &-outer {
       max-width: 100%;
       position: relative;

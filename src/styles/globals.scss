@@ -2,7 +2,7 @@
 
 body {
   font-family: var(--font-family-base);
-  font-size: fluid(20, 25);
+  font-size: fluid(18, 25);
   color: var(--color-gray);
   line-height: 1.4;
 }
@@ -28,44 +28,19 @@ h1,
   color: var(--color-light);
   font-size: fluid(55, 70);
 }
+
 h2,
 .h2 {
   font-size: fluid(32, 45);
 }
+
 h3,
 .h3 {
   font-size: fluid(24, 35);
-}
-h4,
-.h4 {
 }
 
 .container-base {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 var(--container-padding-x);
-}
-
-@keyframes rotateAnimation {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(1turn);
-    transform: rotate(1turn);
-  }
-}
-
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

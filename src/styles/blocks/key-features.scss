@@ -1,7 +1,26 @@
 @use "../helpers" as *;
 
 .key-features {
-  padding: fluid(40, 80) 0 fluid(40, 80) 0;
+  position: relative;
+  padding: fluid(40, 80) 0;
+
+  &__left-dec,
+  &__right-dec {
+    position: absolute;
+  }
+
+  &__right-dec {
+    right: fluid(-100, 0, 1920, 1000);
+    bottom: rem(-220);
+    width: fluid(0, 280, 1920, 700);
+  }
+
+  &__left-dec {
+    left: fluid(-100, 0, 1920, 1000);
+    top: fluid(100, 300);
+    width: fluid(0, 280, 1920, 700);
+  }
+
   &__header {
     text-align: center;
     display: flex;
@@ -10,6 +29,7 @@
     row-gap: fluid(18, 24);
     margin-bottom: rem(40);
   }
+
   &__colums {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,10 +38,12 @@
       grid-template-columns: 1fr;
     }
   }
+
   &__column {
     display: flex;
     flex-direction: column;
     row-gap: fluid(45, 80);
+
     &_2 {
       padding-top: fluid(0, 100);
     }
@@ -33,23 +55,33 @@
   grid-template-columns: fluid(40, 60) 1fr;
   gap: fluid(18, 24);
   align-items: center;
+
   * {
     &:not(:nth-child(1)):not(:nth-child(2)) {
       grid-column: span 2;
     }
   }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
+
   ul {
     padding-left: rem(20);
+
     li {
       list-style-type: disc;
+
       &:not(:last-child) {
         margin-bottom: rem(10);
       }
+
       &::marker {
         font-size: rem(14);
       }

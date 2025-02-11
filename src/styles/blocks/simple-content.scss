@@ -4,7 +4,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: fluid(40, 80) 0 fluid(40, 80) 0;
+  padding: fluid(40, 80) 0;
+
   &_slide-left {
     .simple-content__container {
       position: relative;
@@ -15,9 +16,11 @@
       }
     }
   }
+
   &__container {
     max-width: rem(760);
   }
+
   &__body {
     color: var(--color-light);
     text-align: center;
@@ -25,10 +28,13 @@
     flex-direction: column;
     align-items: center;
     row-gap: fluid(20, 40);
+
     h2 {
       color: inherit;
       font-size: fluid(35, 55);
+      margin-bottom: 0;
     }
+
     p {
       font-size: fluid(20, 32);
       font-weight: 500;
