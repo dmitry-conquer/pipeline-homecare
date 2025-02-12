@@ -17,3 +17,38 @@
 @use "./blocks/row-base";
 
 @use "./libs/lenis";
+
+.price-button-wrapper {
+  margin-top: clamp(1.875rem, 1.189rem + 2.9268vw, 3.75rem);
+  margin-bottom: clamp(1.875rem, 0.7317rem + 4.878vw, 5rem);
+  display: flex;
+  justify-content: center;
+}
+
+.footer__inner.footer__inner_snapshot {
+  flex-direction: column-reverse;
+}
+
+.footer__inner.footer__inner_snapshot .footer__right {
+  align-self: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .footer__inner.footer__inner_snapshot .footer__left {
+    row-gap: 30px;
+    align-items: center;
+  }
+}
+.pricing__title.pricing__title_snapshot {
+  max-width: 955px;
+  margin: 0 auto;
+}
+.pricing__title.pricing__title_snapshot h2 {
+  font-size: clamp(2.1875rem, 1.7302rem + 1.9512vw, 3.4375rem);
+}
+
+@media (max-width: 640px) {
+  .header__logo-image {
+    width: 170px;
+  }
+}

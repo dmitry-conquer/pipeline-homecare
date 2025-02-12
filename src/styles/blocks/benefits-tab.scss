@@ -4,11 +4,8 @@
   background-color: var(--color-gray-bg);
   padding: fluid(40, 80) 0;
 
-  &__container {
-  }
-
   &__header {
-    margin-bottom: fluid(40, 80);
+    margin-bottom: fluid(40, 60);
     text-align: center;
   }
 
@@ -40,7 +37,7 @@
   &__item {
     font-weight: 500;
     font-size: fluid(22, 32);
-    line-height: 1.3;
+    line-height: 1.5;
     transition: all 0.3s ease;
     @include hover {
       color: var(--color-accent);
