@@ -109,45 +109,45 @@
           </div>
         </section>
 
-        <section class="benefits-tab" data-js-tab>
+        <section class="benefits-tab" data-js-tabs>
           <div class="benefits-tab__container container-base">
             <div class="benefits-tab__header">
               <h2>Benefits</h2>
             </div>
             <div class="benefits-tab__body">
               <div class="benefits-tab__menu">
-                <ul class="benefits-tab__list">
-                  <li class="benefits-tab__item is-active" role="button" data-js-tab-trigger="c1">Efficiency Boost</li>
-                  <li class="benefits-tab__item" role="button" data-js-tab-trigger="c2">Improved Engagement</li>
-                  <li class="benefits-tab__item" role="button" data-js-tab-trigger="c3">
+                <div class="benefits-tab__list" role="tablist">
+                  <button id="tab-1" role="tab" aria-controls="tabpanel-1"  data-js-tabs-button aria-selected="true" tabindex="0" type="button" class="benefits-tab__item is-active" role="button" >Efficiency Boost</button>
+                  <button id="tab-2" role="tab" aria-controls="tabpanel-2"  data-js-tabs-button aria-selected="false" tabindex="-1" type="button" class="benefits-tab__item" role="button" >Improved Engagement</button>
+                  <button id="tab-3" role="tab" aria-controls="tabpanel-3"  data-js-tabs-button aria-selected="false" tabindex="-1" type="button" class="benefits-tab__item" role="button" >
                     Professional Online Presence
-                  </li>
-                  <li class="benefits-tab__item" role="button" data-js-tab-trigger="c4">High-Quality Lead Capture</li>
-                </ul>
+                  </button>
+                  <button id="tab-4" role="tab" aria-controls="tabpanel-4"  data-js-tabs-button aria-selected="false" tabindex="-1" type="button" class="benefits-tab__item" role="button" >High-Quality Lead Capture</button>
+                </div>
               </div>
               <div class="benefits-tab__contents">
-                <div id="c1" data-js-tab-content class="benefits-tab__content">
+                <div data-js-tabs-content aria-labelledby="tab-1" id="tabpanel-1" role="tabpanel" class="benefits-tab__content is-active">
                   <p>
                     Free up your team's time by automating repetitive tasks, allowing them to focus on delivering
                     quality care.
                   </p>
                   <img src="/public/images/benefits.webp" alt="" />
                 </div>
-                <div id="c2" data-js-tab-content class="benefits-tab__content">
+                <div data-js-tabs-content aria-labelledby="tab-2" id="tabpanel-2" role="tabpanel" class="benefits-tab__content">
                   <p>
                     Maintain consistent and personalized communication with clients and caregivers, fostering trust and
                     loyalty.
                   </p>
                   <img src="/public/images/benefits.webp" alt="" />
                 </div>
-                <div id="c3" data-js-tab-content class="benefits-tab__content">
+                <div data-js-tabs-content aria-labelledby="tab-3" id="tabpanel-3" role="tabpanel" class="benefits-tab__content">
                   <p>
                     The included customizable website, complete with branded design and lead generation forms, gives
                     your agency a polished and professional online presence.
                   </p>
                   <img src="/public/images/benefits.webp" alt="" />
                 </div>
-                <div id="c4" data-js-tab-content class="benefits-tab__content">
+                <div data-js-tabs-content aria-labelledby="tab-4" id="tabpanel-4" role="tabpanel" class="benefits-tab__content">
                   <p>
                     The website’s tailored lead generation forms ensure you attract and retain the right clients and
                     caregivers for your agency.
